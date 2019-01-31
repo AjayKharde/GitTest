@@ -4,6 +4,6 @@ node{
   }
   stage('Java compile'){
   def javahome = tool name: 'MyJDK', type: 'jdk'
-  sh "${javahome}/bin/javac *.java"
+  sh "${javahome}\bin\javac *.java"
   }
 }
