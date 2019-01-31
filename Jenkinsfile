@@ -3,7 +3,7 @@ node{
   git 'https://github.com/AjayKharde/GitTest.git'
   }
   stage('Java compile'){
-  def javahome = tool name: '', type: 'jdk'
+  def javahome = tool name: 'MyJDK', type: 'jdk'
   sh "${javahome}/bin/javac *.java"
   }
 }
